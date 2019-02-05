@@ -34,17 +34,13 @@ html {
 body {
     font-family: $font-primary;
     font-size: 1.2rem;
-    padding: 3rem;
-    @media only screen and (max-width: $bp-small) {
-        padding: 0;
-    }
 }
 
 .port-nav {
     margin: 2rem;
 }
 .portfolio {
-    padding: 5rem 15rem;
+    padding: 5rem 12rem;
 
     @media only screen and (max-width: $bp-medium) {
         padding: 3rem 8rem;

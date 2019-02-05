@@ -77,7 +77,7 @@
 }
 
 .story {
-    padding: 5rem 15rem;
+    padding: 5rem 12rem;
     @media only screen and (max-width: $bp-medium) {
         padding: 3rem 8rem;
     }
@@ -127,7 +127,7 @@
 }
 
 .provide {
-    padding: 5rem 15rem;
+    padding: 5rem 12rem;
 
     @media only screen and (max-width: $bp-medium) {
         padding: 3rem 8rem;
@@ -169,7 +169,7 @@
 }
 
 .team {
-    padding: 5rem 15rem;
+    padding: 5rem 12rem;
 
     @media only screen and (max-width: $bp-medium) {
         padding: 3rem 8rem;
@@ -255,7 +255,7 @@
 }
 
 .news {
-    padding: 5rem 15rem;
+    padding: 5rem 12rem;
 
     &  h2 {
         text-align: center;
@@ -378,17 +378,18 @@
                 margin-bottom: 1rem;
 
                 &  .input {
-                    margin-right: 1rem;
-                    padding: 1rem 2rem;
+                    padding: 1rem 0 1rem 1rem;
+                    width: 49%;
                     
-                @media only screen and (max-width: $bp-small) {
-                    width: 70vw
-                }
+                    @media only screen and (max-width: $bp-small) {
+                        width: 70vw;
+                    }
                 }
             }
 
             &  .textarea {
-                padding: 1rem 0 0 1rem;
+                padding: 1rem 0 1rem 1rem;
+                width: 100%;
 
                 @media only screen and (max-width: $bp-small) {
                     width: 70vw
