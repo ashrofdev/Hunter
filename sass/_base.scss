@@ -43,7 +43,7 @@ body {
     padding: 5rem 12rem;
 
     @media only screen and (max-width: $bp-medium) {
-        padding: 3rem 8rem;
+        padding: 3rem 3rem;
     }
 
     display: flex;
@@ -87,7 +87,6 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding-bottom: 1rem;
-    grid-gap: 1rem;
 
     @media only screen and (max-width: $bp-small) {
         grid-template-columns: 1fr;

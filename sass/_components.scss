@@ -79,7 +79,7 @@
 .story {
     padding: 5rem 12rem;
     @media only screen and (max-width: $bp-medium) {
-        padding: 3rem 8rem;
+        padding: 3rem 3rem;
     }
 
     &  .img {
@@ -130,7 +130,7 @@
     padding: 5rem 12rem;
 
     @media only screen and (max-width: $bp-medium) {
-        padding: 3rem 8rem;
+        padding: 3rem 3rem;
     }
     background-color: rgb(236, 234, 234);
 
@@ -172,7 +172,7 @@
     padding: 5rem 12rem;
 
     @media only screen and (max-width: $bp-medium) {
-        padding: 3rem 8rem;
+        padding: 3rem 3rem;
     }
 
     &  p {
@@ -247,7 +247,7 @@
     display: flex;
     &  .note {
         color: rgb(92, 88, 88);
-        padding: 2rem;
+        padding: 2rem 0;
     }
 }
 .IMAGE3 {
@@ -266,7 +266,7 @@
     }
 
     @media only screen and (max-width: $bp-medium) {
-        padding: 3rem 8rem;
+        padding: 3rem 3rem;
     }
 }
 .service {
@@ -354,7 +354,7 @@
     padding: 5rem 15rem;
 
     @media only screen and (max-width: $bp-medium) {
-        padding: 3rem 8rem;
+        padding: 3rem 3rem;
     }
 
     &  h2 {
@@ -468,4 +468,54 @@
         text-align: center;
         margin-bottom: 2rem;
     }
+}
+
+.icon {
+    font-size: 1.5rem;
+    transition: all .5s;
+
+    &:hover {
+        transform: rotate(180deg);
+        color: $green;
+    }
+}
+.ico {
+    color: #777;
+    border: 1px solid #777;
+    padding: 1rem;
+    margin: .5rem;
+}
+.ic {
+    padding: .8rem;
+    margin-right: .5rem;
+    border: 1px solid rgb(211, 209, 209);
+}
+
+.ns {
+    margin-left: 1rem;
+}
+.star {
+    color: $green;
+    padding-right: .5rem;
+}
+.content {
+    text-align: center;
+    cursor: pointer;
+    &  span {
+        display: block;
+        color: white;
+        font-size: 1.2rem;
+    }
+}
+.t-icon {
+    color: rgb(212, 206, 206);
+    border: 1px solid rgb(212, 206, 206);
+}
+.team-icon {
+    margin-left: 3rem;
+}
+.italic {
+    color: black;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }

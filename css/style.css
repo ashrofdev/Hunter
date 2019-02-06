@@ -25,7 +25,7 @@ body {
   align-items: center; }
   @media only screen and (max-width: 55em) {
     .portfolio {
-      padding: 3rem 8rem; } }
+      padding: 3rem 3rem; } }
 
 .port-nav {
   margin: 2rem; }
@@ -61,8 +61,7 @@ body {
 .port-img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding-bottom: 1rem;
-  grid-gap: 1rem; }
+  padding-bottom: 1rem; }
   @media only screen and (max-width: 37.5em) {
     .port-img {
       grid-template-columns: 1fr;
@@ -125,7 +124,7 @@ body {
   padding: 5rem 12rem; }
   @media only screen and (max-width: 55em) {
     .story {
-      padding: 3rem 8rem; } }
+      padding: 3rem 3rem; } }
   .story .img {
     width: 100%;
     height: 100%; }
@@ -163,7 +162,7 @@ body {
   background-color: #eceaea; }
   @media only screen and (max-width: 55em) {
     .provide {
-      padding: 3rem 8rem; } }
+      padding: 3rem 3rem; } }
   .provide p {
     color: #575353; }
 
@@ -193,7 +192,7 @@ body {
   padding: 5rem 12rem; }
   @media only screen and (max-width: 55em) {
     .team {
-      padding: 3rem 8rem; } }
+      padding: 3rem 3rem; } }
   .team p {
     text-align: center;
     color: #9e9a9a;
@@ -247,7 +246,7 @@ body {
     border-right: 2px solid #d8d6d6; }
   .shim .note {
     color: #5c5858;
-    padding: 2rem; }
+    padding: 2rem 0; }
 
 .IMAGE3 {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.589)), url(../img/video.jpg); }
@@ -261,7 +260,7 @@ body {
     margin-bottom: 2rem; }
   @media only screen and (max-width: 55em) {
     .news {
-      padding: 3rem 8rem; } }
+      padding: 3rem 3rem; } }
 
 .service {
   background-color: #eceaea; }
@@ -323,7 +322,7 @@ body {
   padding: 5rem 15rem; }
   @media only screen and (max-width: 55em) {
     .contact {
-      padding: 3rem 8rem; } }
+      padding: 3rem 3rem; } }
   .contact h2 {
     text-align: center; }
   .contact .hp {
@@ -398,6 +397,51 @@ body {
 .service .hp {
   text-align: center;
   margin-bottom: 2rem; }
+
+.icon {
+  font-size: 1.5rem;
+  transition: all .5s; }
+  .icon:hover {
+    transform: rotate(180deg);
+    color: #16f58d; }
+
+.ico {
+  color: #777;
+  border: 1px solid #777;
+  padding: 1rem;
+  margin: .5rem; }
+
+.ic {
+  padding: .8rem;
+  margin-right: .5rem;
+  border: 1px solid #d3d1d1; }
+
+.ns {
+  margin-left: 1rem; }
+
+.star {
+  color: #16f58d;
+  padding-right: .5rem; }
+
+.content {
+  text-align: center;
+  cursor: pointer; }
+  .content span {
+    display: block;
+    color: white;
+    font-size: 1.2rem; }
+
+.t-icon {
+  color: #d4cece;
+  border: 1px solid #d4cece; }
+
+.team-icon {
+  margin-left: 3rem; }
+
+.italic {
+  color: black;
+  font-style: italic;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
 
 .head .top {
   display: flex;
