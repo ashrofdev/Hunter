@@ -338,10 +338,18 @@ body {
       margin-bottom: 1rem; }
       .contact .contact-cont .form form .input {
         padding: 1rem 0 1rem 1rem;
-        width: 49%; }
+        width: 49%;
+        transition: all .5s; }
         @media only screen and (max-width: 37.5em) {
           .contact .contact-cont .form form .input {
             width: 70vw; } }
+        .contact .contact-cont .form form .input:focus {
+          outline: none;
+          border-bottom: 0.5rem solid #16f58d;
+          box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.11); }
+        .contact .contact-cont .form form .input:invalid {
+          outline: none;
+          border-bottom: 0.5rem solid #ff002b; }
     .contact .contact-cont .form .textarea {
       padding: 1rem 0 1rem 1rem;
       width: 100%; }
@@ -436,7 +444,7 @@ body {
   border: 1px solid #d4cece; }
 
 .team-icon {
-  margin-left: 3rem; }
+  text-align: center; }
 
 .italic {
   color: black;
