@@ -24,7 +24,7 @@
             align-items: stretch;
             @media only screen and (max-width: $bp-small) {
                 grid-template-columns: repeat(4, 1fr);
-                grid-gap: 3rem;
+                grid-gap: 1rem;
                 margin-top: 2rem;
             }
 
@@ -77,9 +77,10 @@
 }
 
 .story {
-    padding: 5rem 12rem;
+    padding: 5rem 0;
     @media only screen and (max-width: $bp-medium) {
-        padding: 3rem 3rem;
+       grid-template-columns: 1fr;
+       grid-template-rows: 1fr 1fr;
     }
 
     &  .img {
@@ -88,11 +89,18 @@
     }
 
     &  .ab-video {
-        margin: 2rem;
         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.459), rgba(0, 0, 0, 0.507)), url(../img/about.jpg);
         background-size: cover;
         background-position: center;
         height: 25rem;
+        grid-column: 7 / 10;
+
+        @media only screen and (max-width: $bp-small) {
+         
+           grid-row: 2 / 3;
+        
+           grid-column: 2 / 10;
+        }
     }
 
     &  .ab-link {
@@ -127,15 +135,39 @@
 }
 
 .provide {
-    padding: 5rem 12rem;
 
     @media only screen and (max-width: $bp-medium) {
-        padding: 3rem 3rem;
+        padding: 3rem 1rem;
     }
     background-color: rgb(236, 234, 234);
 
     &  p {
         color: rgb(87, 83, 83);
+    }
+
+    &  .feature {
+        padding: 2rem;
+        box-sizing: border-box;
+        margin: 1rem;
+        border: 1px solid transparent;
+        transition: all .7s;
+
+        &:hover {
+            border: 1px solid $green;
+            box-sizing: border-box;
+        }
+        &  .icon {
+            
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            transition: all .7s;
+        }
+
+        &:hover .icon {
+                transform: rotate(360deg);
+                color: $green;
+            
+        }
     }
 
 }
@@ -165,14 +197,20 @@
         padding: 1rem 1.5rem;
         color: $green;
         border: 2px solid $green;
+        transition: all .5s;
+
+        &:hover {
+            background-color: $green;
+            color: black;
+        }
     }
 }
 
 .team {
-    padding: 5rem 12rem;
+    padding: 5rem 0;
 
     @media only screen and (max-width: $bp-medium) {
-        padding: 3rem 3rem;
+        padding: 3rem 0;
     }
 
     &  p {
@@ -255,7 +293,7 @@
 }
 
 .news {
-    padding: 5rem 12rem;
+    padding: 5rem 0;
 
     &  h2 {
         text-align: center;
@@ -266,7 +304,7 @@
     }
 
     @media only screen and (max-width: $bp-medium) {
-        padding: 3rem 3rem;
+        padding: 3rem 0;
     }
 }
 .service {
@@ -351,10 +389,16 @@
 }
 
 .contact {
-    padding: 5rem 15rem;
+    padding: 5rem 0;
+    display: grid;
+    grid-template-columns: minmax(2rem, 1fr) repeat(8, minmax(min-content, 12rem)) minmax(2rem, 1fr);
+      
+    &  .concont {
+        grid-column: 2 / 10;
+    }
 
     @media only screen and (max-width: $bp-medium) {
-        padding: 3rem 3rem;
+        padding: 3rem 0;
     }
 
     &  h2 {
@@ -367,7 +411,7 @@
 
     &  .contact-cont {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
 
         @media only screen and (max-width: $bp-small) {
             flex-direction: column;
@@ -471,20 +515,17 @@
     }
 }
 
-.icon {
-    font-size: 1.5rem;
-    transition: all .5s;
 
-    &:hover {
-        transform: rotate(180deg);
-        color: $green;
-    }
-}
 .ico {
     color: #777;
     border: 1px solid #777;
     padding: 1rem;
     margin: .5rem;
+    transition: all .5s;
+
+    &:hover {
+       color: $green; 
+    }
 }
 .ic {
     padding: .8rem;
@@ -511,6 +552,13 @@
 .t-icon {
     color: rgb(212, 206, 206);
     border: 1px solid rgb(212, 206, 206);
+    transition: all .5s;
+
+    &:hover {
+        color: black;
+        background-color: $green; 
+        border: 1px solid $green;
+    }
 }
 .team-icon {
     text-align: center;
@@ -519,4 +567,10 @@
     color: black;
     font-style: italic;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.icon {
+    padding: .5rem;
+}
+.photo {
+    position: relative;
 }
