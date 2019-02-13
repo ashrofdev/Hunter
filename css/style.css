@@ -360,7 +360,8 @@ body {
     grid-column: 2 / 10; }
   @media only screen and (max-width: 55em) {
     .contact {
-      padding: 3rem 0; } }
+      padding: 3rem 0;
+      text-align: center; } }
   .contact h2 {
     text-align: center; }
   .contact .hp {
@@ -499,6 +500,9 @@ body {
     grid-column: 2 / 4;
     margin-top: 1rem;
     margin-bottom: 1rem; }
+    @media only screen and (max-width: 37.5em) {
+      .head .top .left {
+        margin-top: 4rem; } }
   .head .top .right {
     grid-column: 9 / 10;
     margin-top: 1rem;
@@ -517,6 +521,9 @@ body {
   color: white; }
   .head .nav .left {
     grid-column: 2 / 4; }
+    @media only screen and (max-width: 37.5em) {
+      .head .nav .left {
+        margin-right: 2rem; } }
   .head .nav .right {
     grid-column: 6 / 10; }
   @media only screen and (max-width: 37.5em) {
