@@ -9,6 +9,10 @@
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.616), rgba(0, 0, 0, 0.651)), url(../img/banar/1.jpg);
     background-size: cover;
 
+     @media only screen and (max-width: $bp-small) {
+        height: 80vh;
+    }
+
 
     &  .nav {
         @media only screen and (max-width: $bp-small) {
@@ -81,6 +85,7 @@
     @media only screen and (max-width: $bp-medium) {
        grid-template-columns: 1fr;
        grid-template-rows: 1fr 1fr;
+       padding: 5rem 2rem;
     }
 
     &  .img {
@@ -101,6 +106,15 @@
         
            grid-column: 2 / 10;
         }
+        position: relative;
+
+        &  .play {
+            position: absolute;
+            top: 40%;
+            left: 40%;
+            font-size: 5rem;
+            color: #fff;
+        }
     }
 
     &  .ab-link {
@@ -109,6 +123,10 @@
         background-color: rgb(54, 52, 52);
         padding: 1rem 1.5rem;
         margin-top: 2rem;
+
+        &:hover {
+            background-color: $green;
+        }
     }
 
 
@@ -239,6 +257,10 @@
             height: 100%;
             overflow: hidden;
             border-radius: 50%;
+
+            @media only screen and (max-width: $bp-small) {
+               transform: scale(.7);
+            } 
         }
     }
 }
@@ -290,6 +312,11 @@
 }
 .IMAGE3 {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.589)), url(../img/video.jpg);
+    &  .play {
+        margin-top: 1rem;
+        font-size: 5rem;
+        color: #fff;
+    }
 }
 
 .news {
@@ -306,12 +333,26 @@
     @media only screen and (max-width: $bp-medium) {
         padding: 3rem 0;
     }
+
+    &  .photo:nth-child(1) {
+        background-image: none;
+    }
+    
+    &  .photo:nth-child(2) {
+        background-image: none;
+    }
+    
+    &  .photo:nth-child(3) {
+        background-image: none;
+    }
 }
 .service {
     background-color: rgb(236, 234, 234);
 }
 
 .shadow {
+    background-color: #fff;
+    background-image: none;
 
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.137);
 
@@ -429,8 +470,10 @@
                     
                     @media only screen and (max-width: $bp-small) {
                         width: 70vw;
+                        margin-bottom: 1rem;
                     }
                 }
+
             }
 
             &  .textarea {
@@ -441,6 +484,8 @@
                     width: 70vw
                 }
             }
+            
+            margin-bottom: 2rem;
 
             &  a {
                 text-decoration: none;
@@ -574,4 +619,10 @@
 }
 .photo {
     position: relative;
+}
+
+
+.search {
+    color: $green;
+    transform: scale(4);
 }

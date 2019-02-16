@@ -20,6 +20,10 @@ $bp-small: 37.5em;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    @media only screen and (max-width: $bp-small) {
+        box-sizing: border-box;
+    }
 }
 
 html {
@@ -56,19 +60,33 @@ body {
     grid-row: 2 / 3;
     grid-column: 4 / 8;
     justify-self: center;
+
+    &  ul {
+        display: flex;
+
+        @media only screen and (max-width: $bp-small) {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: center;
+        } 
+    }
 }
 .section-heading {
     grid-column: 5 / 7;
     justify-self: center;
 }
 .port-nav li {
-    list-style: none;
-    float: left;
     margin-right: 1rem;
+    list-style: none;
 
     @media only screen and (max-width: $bp-small) {
         margin-bottom: 2rem;
-    }    
+        justify-content: flex-start;
+        align-items: flex-start;
+    } 
+    &  .all {
+        background-color: $green;
+    }   
 }
 .port-nav a {
     color: rgb(78, 77, 77);
@@ -79,6 +97,8 @@ body {
     text-decoration: none;
     transition: all .5s;
     font-family: serif;
+
+   
 }
 .port-nav a:hover {
     color: white;
@@ -100,8 +120,66 @@ body {
 
     @media only screen and (max-width: $bp-small) {
         grid-template-columns: 1fr;
-
+        grid-gap: 1rem;
         text-align: center;
+    }
+
+    &  .photo{
+        background-size: cover;
+        transition: all .5s;
+        &  .const {
+            visibility: hidden;
+            padding: 10rem 4rem;
+            @media only screen and (max-width: $bp-small) {
+               padding: 13rem 0;
+            }
+            transition: all .5s;
+        }
+
+        &:hover .const {
+            visibility: visible;
+            background-color: rgba(0, 0, 0, 0.747);
+        }
+        &:hover {
+            background-size: 170%;
+            background-position: top;
+        }
+    }
+
+    &  .photo:nth-child(1) {
+        background-image: url(../img/work/1.jpg);
+    }
+    
+    &  .photo:nth-child(2) {
+        background-image: url(../img/work/2.jpg);
+    }
+    
+    &  .photo:nth-child(3) {
+        background-image: url(../img/work/3.jpg);
+    }
+    
+    &  .photo:nth-child(4) {
+        background-image: url(../img/work/4.jpg);
+    }
+    
+    &  .photo:nth-child(5) {
+        background-image: url(../img/work/5.jpg);
+    }
+    
+    &  .photo:nth-child(6) {
+        background-image: url(../img/work/6.jpg);
+    }
+    
+    &  .photo:nth-child(7) {
+        background-image: url(../img/work/7.jpg);
+    }
+    
+    &  .photo:nth-child(8) {
+        background-image: url(../img/work/8.jpg);
+    }
+    
+    &  .photo:nth-child(9) {
+        background-image: url(../img/work/9.jpg);
     }
 
    
